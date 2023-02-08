@@ -39,11 +39,11 @@ order by order_value DESC
 Drop table if exists #Summary_customer_order
 Create Table #Summary_customer_order
 (
-order_id numeric,
-Company_Id numeric,
-Company_Name nvarchar,
-Customer nvarchar,
-Order_value numeric,
+order_id nvarchar(50),
+Company_Id nvarchar(50),
+Company_Name nvarchar(50),
+Customer nvarchar(100),
+Order_value int,
 Converted int 
 )
 insert into #Summary_customer_order
